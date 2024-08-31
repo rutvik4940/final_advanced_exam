@@ -12,9 +12,9 @@ class FBHelper
   }
   Future<List<dbModel>> read()
   async {
-    QuerySnapshot qds=await db.collection("shop").get();
-    List<QueryDocumentSnapshot<Object?>> qd=qds.docs;
-    List<dbModel> model=qd.map((e) => dbModel.mapToModel(e.data()! as Map,e.id),).toList();
+    QuerySnapshot data=await db.collection("shop").get();
+    List<QueryDocumentSnapshot<Object?>> data1=d.dataocs;
+    List<dbModel> model=data1.map((e) => dbModel.mapToModel(e.data()! as Map,e.id),).toList();
     return model;
   }
   Future<void> update(dbModel model)
