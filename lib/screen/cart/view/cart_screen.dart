@@ -77,14 +77,14 @@ class _CartScreenState extends State<CartScreen> {
                         Text(
                           "${controller.list1[index].product}",
                           style: TextStyle(
-                              fontWeight: FontWeight.bold, fontSize: 20),
+                              fontWeight: FontWeight.bold, fontSize: 20,fontFamily: "f3"),
                         ),
-                        Text("${controller.list1[index].price}",
+                        Text("\$ ${controller.list1[index].price}",
                             style: TextStyle(
-                                fontWeight: FontWeight.bold, fontSize: 20)),
+                                fontWeight: FontWeight.bold, fontSize: 20,fontFamily: "f3")),
                         Text("${controller.list1[index].qua}",
                             style: TextStyle(
-                                fontWeight: FontWeight.bold, fontSize: 20)),
+                                fontWeight: FontWeight.bold, fontSize: 20,fontFamily: "f3")),
                       ],
                     ),
                   ),

@@ -19,12 +19,14 @@ class _SplashScreenState extends State<SplashScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Image.asset("assets/image/p1.png"),
-          Text("Shopping Now",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20),),
-        ],
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Image.asset("assets/image/c1.gif"),
+            Center(child: Text("Shopping Now",style: TextStyle(fontSize: 30,fontFamily: "f1"),)),
+          ],
+        ),
       ),
     );
   }
