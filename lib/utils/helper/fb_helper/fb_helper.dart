@@ -13,7 +13,7 @@ class FBHelper
   Future<List<dbModel>> read()
   async {
     QuerySnapshot data=await db.collection("shop").get();
-    List<QueryDocumentSnapshot<Object?>> data1=data.dataocs;
+    List<QueryDocumentSnapshot<Object?>> data1=data.docs;
     List<dbModel> model=data1.map((e) => dbModel.mapToModel(e.data()! as Map,e.id),).toList();
     return model;
   }
